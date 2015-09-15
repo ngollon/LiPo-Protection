@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC08
+D Quad and2
+K TTL and2
+$ENDCMP
+#
+#End Doc Library

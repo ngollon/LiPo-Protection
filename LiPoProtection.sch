@@ -28,11 +28,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:cmos4000ex
-LIBS:transistors_ex
-LIBS:device_ex
 LIBS:74xx_ex
+LIBS:device_ex
 LIBS:regul_ex
+LIBS:transistors_ex
+LIBS:cmos4000_ex
 LIBS:LiPoProtection-cache
 EELAYER 25 0
 EELAYER END
@@ -79,7 +79,7 @@ F 1 "Supply" V 10400 3675 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10300 3675 60  0001 C CNN
 F 3 "" H 10300 3675 60  0000 C CNN
 	1    10300 3675
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X02 P2
@@ -90,7 +90,7 @@ F 1 "Load" V 10400 3125 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10300 3125 60  0001 C CNN
 F 3 "" H 10300 3125 60  0000 C CNN
 	1    10300 3125
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L GND #PWR01
@@ -1034,7 +1034,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 3075 10100 2875
 Wire Wire Line
-	10100 2875 10600 2875
+	9925 2875 10600 2875
 Wire Wire Line
 	10600 2875 10600 3425
 Wire Wire Line
@@ -1044,9 +1044,9 @@ Wire Wire Line
 Wire Wire Line
 	10100 3725 10000 3725
 Wire Wire Line
-	10000 3975 10000 3725
+	10000 3725 10000 3975
 Wire Wire Line
-	9400 3975 10000 3975
+	10000 3975 9400 3975
 Wire Wire Line
 	9400 3975 9400 3875
 Wire Wire Line
@@ -1189,9 +1189,9 @@ Wire Wire Line
 Wire Wire Line
 	2000 7050 5550 7050
 Wire Wire Line
-	2300 1500 2300 1050
+	2300 1050 2300 1500
 Wire Wire Line
-	1150 1500 2300 1500
+	2300 1500 1150 1500
 Connection ~ 2300 1050
 Wire Wire Line
 	4100 6400 4100 6350
@@ -1477,9 +1477,9 @@ Connection ~ 1725 5525
 Wire Wire Line
 	1725 6050 1050 6050
 Wire Wire Line
-	1050 5900 1050 6050
+	1050 6050 1050 5900
 Wire Wire Line
-	900  5900 1050 5900
+	1050 5900 900  5900
 Wire Wire Line
 	925  5625 925  5900
 Connection ~ 925  5900
@@ -1519,4 +1519,23 @@ Connection ~ 7200 5050
 Wire Wire Line
 	7100 4700 7100 5250
 Connection ~ 7100 5250
+$Comp
+L D D1
+U 1 1 55F855C6
+P 9825 2975
+F 0 "D1" H 9825 3075 50  0000 C CNN
+F 1 "D" H 9825 2875 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 9825 2975 60  0001 C CNN
+F 3 "" H 9825 2975 60  0000 C CNN
+	1    9825 2975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9925 2875 9925 2825
+Wire Wire Line
+	9925 2825 9825 2825
+Connection ~ 10100 2875
+Wire Wire Line
+	9825 3125 9825 3175
+Connection ~ 9825 3175
 $EndSCHEMATC
