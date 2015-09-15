@@ -1,4 +1,4 @@
-update=14.09.2015 16:04:14
+update=15.09.2015 15:21:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,8 +33,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../Libraries
@@ -68,8 +66,10 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=cmos4000ex
-LibName31=transistors_ex
-LibName32=device_ex
-LibName33=74xx_ex
-LibName34=regul_ex
+LibName30=Libraries/74xx_ex
+LibName31=Libraries/device_ex
+LibName32=Libraries/regul_ex
+LibName33=Libraries/transistors_ex
+LibName34=Libraries/cmos4000_ex
+[general]
+version=1

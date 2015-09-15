@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 4082
+D Dual 4 inputs Nand
+K CMOS Nand4
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LP2950
+D LP2950 LDO
+K POWER
+$ENDCMP
+#
+#End Doc Library
